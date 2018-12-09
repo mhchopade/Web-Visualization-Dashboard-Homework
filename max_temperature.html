@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web Visualization Dashboard (Max Temperature)</title>
+  <!--<link rel="stylesheet" href="reset.css">-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Modified from the base codes found here: https://www.w3schools.com/bootstrap/bootstrap_navbar.asp -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+        <!-- Allows the contents of the container to adjust to any screen width, i.e., wraps -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><b>Latitude</b></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <!-- A solution from StackOverflow inquiry "Bootstrap 3 multiple menus collapse into one for mobile" -->
+            <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="menu">Plots<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="max_temperature.html">Temperature</a></li>
+                <li><a href="humidity.html">Humidity</a></li>
+                <li><a href="cloudiness.html">Cloudiness</a></li>
+                <li><a href="wind_speed.html">Wind Speed</a></li>
+            </ul>
+            </li>
+            <li><a href="comparison.html">Comparison</a></li>
+            <li><a href="data.html">Data</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <div class="container">
+            <div class="row">
+              <div class="col-md-6"><br>
+                <h3><b>Latitude vs. Temperature Summary</b></h3><br>
+              </div>
+              <div class="col-md-6"><br>
+                <h3><em>Visualizations</em></h3><br>
+              </div>
+           </div>
+        
+            <div class="row">
+              <div class="col-md-6"><br>
+                <div class="img-with-text">
+                  <img src="Resources/assets/LatitudeTemperatures.png" alt="Latitude vs. Temperature" width="100%" height="100%">
+                    <p>As was hypothesized, the weather is markedly warmer towards equator (0 Degrees Latitude) and also of note,
+                    as of collecting and running this data on 25 October 2018, the southern hemisphere is warmer and especially
+                    around -20 Degrees Latitude the range of temperature is broader than the rest of the trend. These factors may be
+                    attributable to Earth's tilt in the Autumnal Season.</p>
+                </div>
+              </div>
+        
+              <div class="col-md-3"><br>
+                <a href="max_temperature.html"><img style="border:5px double black;" src="Resources/assets/LatitudeTemperatures.png" alt="Latitude vs. Max Temperature" width="100%" height="100%"></a>
+                <a href="wind_speed.html"><img src="Resources/assets/LatitudeWindspeed.png" alt="Latitude vs. Wind Speed" width="100%" height="100%"></a>
+              </div>
+        
+              <div class="col-md-3"><br>
+                <a href="humidity.html"><img src="Resources/assets/LatitudeHumidity.png" alt="Latitude vs. Humidity" width="100%" height="100%"></a>
+                <a href="cloudiness.html"><img src="Resources/assets/LatitudeCloudiness.png" alt="Latitude vs. Cloudiness" width="100%" height="100%"></a>
+              </div>
+        
+            </div>
+          </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      
+</body>
+
+</html>
